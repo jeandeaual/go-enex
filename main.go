@@ -86,6 +86,9 @@ type Note struct {
 	ReceivedAt DateTime   `xml:"note-attributes>subject-date,omitempty" json:",omitempty"`
 	Source     string     `xml:"note-attributes>source,omitempty" json:",omitempty"`
 	SourceURL  *url.URL   `xml:"note-attributes>source-url,omitempty" json:",omitempty"`
+	Latitude   *float64   `xml:"note-attributes>latitude,omitempty" json:",omitempty"`
+	Longitude  *float64   `xml:"note-attributes>longitude,omitempty" json:",omitempty"`
+	Altitude   *float64   `xml:"note-attributes>altitude,omitempty" json:",omitempty"`
 	Resources  []Resource `xml:"resource,omitempty" json:",omitempty"`
 }
 
